@@ -216,7 +216,7 @@ public class CalculatorGUI extends JFrame implements ActionListener {
                    calculatorScreen.setText(calculatorScreen.getText() + deleteCharacter.charAt(i));
                }
                // if screen has only 1 number and clicked the delete button, it will display 0 instead of a blank space
-               if (calculatorScreen.getText().length() == 1) {
+               if (calculatorScreen.getText().isEmpty()) {
                    calculatorScreen.setText("0");
                }
            } else if (buttonClick.equals("CLEAR")) {
